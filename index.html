@@ -128,7 +128,8 @@
   </div>
 </main>
 
-<footer class="footer">
+
+   <footer class="footer">
   <div class="container">
     <p>© ۱۴۰۵ مستر گاید — طراحی و تدوین: <strong>احسان روحانی راوری</strong></p>
     <p style="margin-top: 8px; font-size: 0.85rem;">
@@ -137,10 +138,39 @@
   </div>
 </footer>
 
+<!-- ===== اسکریپت‌های انتهای صفحه ===== -->
 <script>
-  // اسکریپت منوی موبایل
+  // ۱. اسکریپت منوی موبایل
   document.getElementById('menuToggle').addEventListener('click', function() {
     document.getElementById('nav').classList.toggle('open');
+  });
+
+  // ۲. اسکریپت فیلتر مقالات
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.btn-filter');
+    const articleCards = document.querySelectorAll('.article-card');
+
+    if(filterButtons.length > 0 && articleCards.length > 0) {
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // تغییر دکمه فعال
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filterValue = button.getAttribute('data-filter');
+
+          // نمایش یا مخفی کردن کارت‌ها
+          articleCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'flex';
+              card.style.animation = 'fadeIn 0.5s ease forwards';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
   });
 </script>
 
