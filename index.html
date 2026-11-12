@@ -82,18 +82,43 @@
     <a href="psychology-of-major-choice/" class="btn-primary">خواندن مقاله اصلی <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i></a>
   </section>
 
-  <h2 class="section-title" id="articles">مقالات تخصصی</h2>
-  <div class="grid">
-    
-    <a href="psychology-of-major-choice/" class="card">
-      <h3>روانشناسی تصمیم تحصیلی</h3>
-      <p>بررسی ۵ سوگیری شناختی پنهان که هنگام انتخاب رشته، تصمیم ما را منحرف می‌کنند.</p>
-    </a>
+<h2 class="section-title" id="articles">مقالات تخصصی</h2>
 
-    <div class="card" style="opacity: 0.5; cursor: default;">
-      <h3>سوگیری تأیید (به‌زودی)</h3>
-      <p>چرا فقط شواهد تأییدکننده تصمیم خود را می‌بینیم؟</p>
-    </div>
+<!-- دکمه‌های فیلتر (۵ دسته) -->
+<div class="filter-buttons" style="display: flex; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;">
+  <button class="btn-filter active" data-filter="all">همه مقالات</button>
+  <button class="btn-filter" data-filter="identity">هویت و استعدادشناسی</button>
+  <button class="btn-filter" data-filter="new-jobs">رشته‌ها و مشاغل جدید</button>
+  <button class="btn-filter" data-filter="social">واقعیت‌های اجتماعی</button>
+  <button class="btn-filter" data-filter="cognitive">سوگیری‌های شناختی</button>
+</div>
+
+<!-- گرید کارت‌ها -->
+<div class="grid" id="articlesGrid">
+  
+  <!-- مقاله ستون (پایه) -->
+  <a href="psychology-of-major-choice/" class="card article-card" data-category="cognitive">
+    <h3>روانشناسی تصمیم تحصیلی (راهنمای جامع)</h3>
+    <p>بررسی ۵ سوگیری شناختی پنهان که هنگام انتخاب رشته، تصمیم ما را منحرف می‌کنند.</p>
+  </a>
+
+  <!-- نمونه مقالات خوشه‌ای جدید -->
+  <a href="identity-aptitude/what-is-talent/" class="card article-card" data-category="identity">
+    <h3>استعداد یعنی نمره ۲۰؟</h3>
+    <p>تفاوت علم استعدادشناسی با نمرات مدرسه، و چطور استعداد پایدار خود را کشف کنیم.</p>
+  </a>
+
+  <a href="new-majors-jobs/ai-and-future-jobs/" class="card article-card" data-category="new-jobs">
+    <h3>هوش مصنوعی و مشاغل آینده</h3>
+    <p>کدام رشته‌ها با آمدن AI حذف می‌شوند و کدام رشته‌های جدید تازه متولد می‌شوند؟</p>
+  </a>
+
+  <a href="social-realities/job-market-reality/" class="card article-card" data-category="social">
+    <h3>واقعیت بازار کار ایران</h3>
+    <p>چرا مدرک دانشگاهی دیگر ضامن شغل نیست؟ واقعیت‌های اجتماعی که کسی در مدرسه نمی‌گوید.</p>
+  </a>
+
+</div>
     
     <div class="card" style="opacity: 0.5; cursor: default;">
       <h3>تعارض والدین و فرزند (به‌زودی)</h3>
