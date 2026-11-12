@@ -3,31 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>مستر گاید | علم تصمیم‌گیری تحصیلی</title>
-  <meta name="description" content="تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی و انتخاب رشته." />
+  <meta name="description" content="تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی و انتخاب رشته. چرا مغز ما هنگام انتخاب رشته اشتباه می‌کند؟" />
+  <meta name="author" content="احسان روحانی راوری" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  
+  <!-- تایید گوگل سرچ کنسول -->
+  <meta name="google-site-verification" content="ptv2LCvSY_I8FWllQwmGZ5sryfSsP6nOhL_9igJFy4g" />
+
   <link rel="canonical" href="https://ehssnrouhani.github.io/mester-guide/" />
   
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ehssnrouhani.github.io/mester-guide/" />
+  <meta property="og:title" content="مستر گاید | علم تصمیم‌گیری تحصیلی" />
+  <meta property="og:description" content="تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی و انتخاب رشته." />
+  <meta property="og:site_name" content="مستر گاید" />
+  <meta property="og:locale" content="fa_IR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="مستر گاید | علم تصمیم‌گیری تحصیلی" />
+  <meta name="twitter:description" content="تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی و انتخاب رشته." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- لینک CSS اصلی -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Schema: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "مستر گاید",
+    "alternateName": "Mester Guide",
+    "url": "https://ehssnrouhani.github.io/mester-guide/",
+    "inLanguage": "fa-IR",
+    "description": "تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی و انتخاب رشته.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "مستر گاید",
+      "url": "https://ehssnrouhani.github.io/mester-guide/",
+      "sameAs": ["https://ehssnrouhani.github.io/Mestrplanner/"]
+    }
+  }
+  </script>
 </head>
 <body>
 
 <header class="header">
   <div class="container header-inner">
-    <a href="./" class="logo">
+    <a href="./" class="logo" aria-label="صفحه اصلی مستر گاید">
       <div style="font-size: 1.5rem;">🧭</div>
       <div style="display: flex; flex-direction: column; line-height: 1.2;">
         <span class="logo-fa">مستر گاید</span>
         <span class="logo-en">Mester Guide</span>
       </div>
     </a>
-    <button class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('open')"><i class="fa-solid fa-bars"></i></button>
-    <nav class="nav" id="nav">
+    <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav" id="nav" aria-label="ناوبری اصلی">
       <a href="./" class="nav-link active">خانه</a>
       <a href="#articles" class="nav-link">مقالات</a>
       <a href="about/" class="nav-link">درباره من</a>
-      <a href="https://ehssnrouhani.github.io/Mesterplanner/" class="nav-cta" target="_blank" rel="noopener"><i class="fa-solid fa-brain"></i> مستر پلنر</a>
+      <a href="https://ehssnrouhani.github.io/Mestrplanner/" class="nav-cta" target="_blank" rel="noopener"><i class="fa-solid fa-brain"></i> مستر پلنر</a>
     </nav>
   </div>
 </header>
@@ -36,7 +79,7 @@
   <section class="hero">
     <h1>علم تصمیم‌گیری تحصیلی</h1>
     <p>چرا مغز ما هنگام انتخاب رشته اشتباه می‌کند؟ و چگونه می‌توانیم تصمیم‌هایی بگیریم که در ۴۰ سالگی از آن‌ها پشیمان نشویم.</p>
-    <a href="psychology-of-major-choice/" class="btn-primary">خواندن مقاله اصلی <i class="fa-solid fa-arrow-left"></i></a>
+    <a href="psychology-of-major-choice/" class="btn-primary">خواندن مقاله اصلی <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i></a>
   </section>
 
   <h2 class="section-title" id="articles">مقالات تخصصی</h2>
@@ -63,8 +106,18 @@
 <footer class="footer">
   <div class="container">
     <p>© ۱۴۰۵ مستر گاید — طراحی و تدوین: <strong>احسان روحانی راوری</strong></p>
+    <p style="margin-top: 8px; font-size: 0.85rem;">
+      <a href="https://ehssnrouhani.github.io/Mestrplanner/" style="color: var(--primary);" target="_blank" rel="noopener">مشاهده سایت مستر پلنر</a>
+    </p>
   </div>
 </footer>
+
+<script>
+  // اسکریپت منوی موبایل
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('nav').classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>
