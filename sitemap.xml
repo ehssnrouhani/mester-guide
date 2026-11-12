@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<url>
-  <loc>https://ehssnrouhani.github.io/mester-guide/about/</loc>
-  <lastmod>2026-11-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- صفحه اصلی (ویترین) -->
   <url>
     <loc>https://ehssnrouhani.github.io/mester-guide/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <!-- مقاله روانشناسی تصمیم تحصیلی -->
+  <url>
+    <loc>https://ehssnrouhani.github.io/mester-guide/psychology-of-major-choice/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- صفحه درباره من -->
+  <url>
+    <loc>https://ehssnrouhani.github.io/mester-guide/about/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
