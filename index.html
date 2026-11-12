@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>مستر گاید | علم تصمیم‌گیری تحصیلی</title>
-  <meta name="description" content="تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی و انتخاب رشته. چرا مغز ما هنگام انتخاب رشته اشتباه می‌کند؟" />
+  <meta name="description" content="تحلیل علمی و راهنمای عملی دربارهٔ روانشناسی تصمیم‌های تحصیلی، هویت‌شناسی، استعدادشناسی و واقعیت‌های بازار کار. چرا مغز ما هنگام انتخاب رشته اشتباه می‌کند؟" />
   <meta name="author" content="احسان روحانی راوری" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   
@@ -14,6 +14,7 @@
 
   <link rel="canonical" href="https://ehssnrouhani.github.io/mester-guide/" />
   
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ehssnrouhani.github.io/mester-guide/" />
   <meta property="og:title" content="مستر گاید | علم تصمیم‌گیری تحصیلی" />
@@ -27,15 +28,17 @@
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>" />
 
+  <!-- فونت‌ها و آیکون‌ها -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
-  <!-- لینک CSS اصلی -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Schema: WebSite -->
+  <!-- ===== اسکیماها (JSON-LD) ===== -->
+  
+  <!-- 1. اسکیمای WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,6 +56,72 @@
     }
   }
   </script>
+
+  <!-- 2. اسکیمای مقاله ستون (TechArticle) - حالت اقماری -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "روانشناسی تصمیم تحصیلی: چرا مغز ما اشتباه می‌کند؟",
+    "author": { "@type": "Person", "name": "احسان روحانی راوری", "url": "https://ehssnrouhani.github.io/mester-guide/about/" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ehssnrouhani.github.io/mester-guide/psychology-of-major-choice/" },
+    "hasPart": [
+      { 
+        "@type": "Article", 
+        "name": "استعداد یعنی نمره ۲۰؟ تفاوت استعدادشناسی با نمرات مدرسه", 
+        "url": "https://ehssnrouhani.github.io/mester-guide/identity-aptitude/what-is-talent/" 
+      },
+      { 
+        "@type": "Article", 
+        "name": "هوش مصنوعی و مشاغل آینده: کدام رشته‌ها حذف می‌شوند؟", 
+        "url": "https://ehssnrouhani.github.io/mester-guide/new-majors-jobs/ai-and-future-jobs/" 
+      },
+      { 
+        "@type": "Article", 
+        "name": "واقعیت بازار کار ایران: چرا مدرک دانشگاهی ضامن شغل نیست؟", 
+        "url": "https://ehssnrouhani.github.io/mester-guide/social-realities/job-market-reality/" 
+      },
+      { 
+        "@type": "Article", 
+        "name": "سوگیری تأیید در انتخاب رشته", 
+        "url": "https://ehssnrouhani.github.io/mester-guide/cognitive-biases/confirmation-bias/" 
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* استایل اختصاصی دکمه‌های فیلتر (در صورت عدم وجود در style.css) */
+    .filter-buttons {
+      display: flex; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;
+    }
+    .btn-filter {
+      background: var(--surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .btn-filter:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .btn-filter.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
@@ -82,54 +151,66 @@
     <a href="psychology-of-major-choice/" class="btn-primary">خواندن مقاله اصلی <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i></a>
   </section>
 
-<h2 class="section-title" id="articles">مقالات تخصصی</h2>
-
-<!-- دکمه‌های فیلتر (۵ دسته) -->
-<div class="filter-buttons" style="display: flex; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;">
-  <button class="btn-filter active" data-filter="all">همه مقالات</button>
-  <button class="btn-filter" data-filter="identity">هویت و استعدادشناسی</button>
-  <button class="btn-filter" data-filter="new-jobs">رشته‌ها و مشاغل جدید</button>
-  <button class="btn-filter" data-filter="social">واقعیت‌های اجتماعی</button>
-  <button class="btn-filter" data-filter="cognitive">سوگیری‌های شناختی</button>
-</div>
-
-<!-- گرید کارت‌ها -->
-<div class="grid" id="articlesGrid">
+  <h2 class="section-title" id="articles">مقالات تخصصی</h2>
   
-  <!-- مقاله ستون (پایه) -->
-  <a href="psychology-of-major-choice/" class="card article-card" data-category="cognitive">
-    <h3>روانشناسی تصمیم تحصیلی (راهنمای جامع)</h3>
-    <p>بررسی ۵ سوگیری شناختی پنهان که هنگام انتخاب رشته، تصمیم ما را منحرف می‌کنند.</p>
-  </a>
+  <!-- دکمه‌های فیلتر (۵ دسته) -->
+  <div class="filter-buttons">
+    <button class="btn-filter active" data-filter="all">همه مقالات</button>
+    <button class="btn-filter" data-filter="identity">هویت و استعدادشناسی</button>
+    <button class="btn-filter" data-filter="new-jobs">رشته‌ها و مشاغل جدید</button>
+    <button class="btn-filter" data-filter="social">واقعیت‌های اجتماعی</button>
+    <button class="btn-filter" data-filter="cognitive">سوگیری‌های شناختی</button>
+  </div>
 
-  <!-- نمونه مقالات خوشه‌ای جدید -->
-  <a href="identity-aptitude/what-is-talent/" class="card article-card" data-category="identity">
-    <h3>استعداد یعنی نمره ۲۰؟</h3>
-    <p>تفاوت علم استعدادشناسی با نمرات مدرسه، و چطور استعداد پایدار خود را کشف کنیم.</p>
-  </a>
-
-  <a href="new-majors-jobs/ai-and-future-jobs/" class="card article-card" data-category="new-jobs">
-    <h3>هوش مصنوعی و مشاغل آینده</h3>
-    <p>کدام رشته‌ها با آمدن AI حذف می‌شوند و کدام رشته‌های جدید تازه متولد می‌شوند؟</p>
-  </a>
-
-  <a href="social-realities/job-market-reality/" class="card article-card" data-category="social">
-    <h3>واقعیت بازار کار ایران</h3>
-    <p>چرا مدرک دانشگاهی دیگر ضامن شغل نیست؟ واقعیت‌های اجتماعی که کسی در مدرسه نمی‌گوید.</p>
-  </a>
-
-</div>
+  <!-- گرید کارت‌ها -->
+  <div class="grid" id="articlesGrid">
     
-    <div class="card" style="opacity: 0.5; cursor: default;">
-      <h3>تعارض والدین و فرزند (به‌زودی)</h3>
-      <p>پروتکل ۴ مرحله‌ای برای گفت‌وگو با والدین هنگام انتخاب رشته.</p>
-    </div>
+    <!-- ۱. مقاله ستون (Pillar) -->
+    <a href="psychology-of-major-choice/" class="card article-card" data-category="cognitive">
+      <div style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-brain"></i></div>
+      <h3>روانشناسی تصمیم تحصیلی (راهنمای جامع)</h3>
+      <p>بررسی ۵ سوگیری شناختی پنهان که هنگام انتخاب رشته، تصمیم ما را منحرف می‌کنند.</p>
+    </a>
+
+    <!-- ۲. مقاله هویت و استعدادشناسی -->
+    <a href="identity-aptitude/what-is-talent/" class="card article-card" data-category="identity">
+      <div style="font-size: 1.5rem; color: #3b82f6; margin-bottom: 0.5rem;"><i class="fa-solid fa-fingerprint"></i></div>
+      <h3>استعداد یعنی نمره ۲۰؟</h3>
+      <p>تفاوت علم استعدادشناسی با نمرات مدرسه، و چطور استعداد پایدار خود را کشف کنیم.</p>
+    </a>
+
+    <!-- ۳. مقاله مشاغل جدید -->
+    <a href="new-majors-jobs/ai-and-future-jobs/" class="card article-card" data-category="new-jobs">
+      <div style="font-size: 1.5rem; color: #10b981; margin-bottom: 0.5rem;"><i class="fa-solid fa-robot"></i></div>
+      <h3>هوش مصنوعی و مشاغل آینده</h3>
+      <p>کدام رشته‌ها با آمدن AI حذف می‌شوند و کدام رشته‌های جدید تازه متولد می‌شوند؟</p>
+    </a>
+
+    <!-- ۴. مقاله واقعیت‌های اجتماعی -->
+    <a href="social-realities/job-market-reality/" class="card article-card" data-category="social">
+      <div style="font-size: 1.5rem; color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-chart-line"></i></div>
+      <h3>واقعیت بازار کار ایران</h3>
+      <p>چرا مدرک دانشگاهی دیگر ضامن شغل نیست؟ واقعیت‌های اجتماعی که کسی در مدرسه نمی‌گوید.</p>
+    </a>
+
+    <!-- ۵. مقاله هویت (بحران هویت) -->
+    <a href="identity-aptitude/identity-crisis/" class="card article-card" data-category="identity">
+      <div style="font-size: 1.5rem; color: #3b82f6; margin-bottom: 0.5rem;"><i class="fa-solid fa-user-astronaut"></i></div>
+      <h3>بحران هویت در انتخاب رشته</h3>
+      <p>وقتی نمی‌دانی «من کی هستم»، چطور می‌توانی رشته‌ای را انتخاب کنی که به تو می‌خورد؟</p>
+    </a>
+
+    <!-- ۶. مقاله سوگیری (سوگیری تأیید) -->
+    <a href="cognitive-biases/confirmation-bias/" class="card article-card" data-category="cognitive">
+      <div style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <h3>سوگیری تأیید در انتخاب رشته</h3>
+      <p>چرا فقط شواهد تأییدکننده تصمیم خود را می‌بینیم و چطور از این دام خارج شویم؟</p>
+    </a>
 
   </div>
 </main>
 
-
-   <footer class="footer">
+<footer class="footer">
   <div class="container">
     <p>© ۱۴۰۵ مستر گاید — طراحی و تدوین: <strong>احسان روحانی راوری</strong></p>
     <p style="margin-top: 8px; font-size: 0.85rem;">
@@ -140,20 +221,25 @@
 
 <!-- ===== اسکریپت‌های انتهای صفحه ===== -->
 <script>
-  // ۱. اسکریپت منوی موبایل
-  document.getElementById('menuToggle').addEventListener('click', function() {
-    document.getElementById('nav').classList.toggle('open');
-  });
-
-  // ۲. اسکریپت فیلتر مقالات
   document.addEventListener('DOMContentLoaded', () => {
+    
+    // ۱. اسکریپت منوی موبایل
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // ۲. اسکریپت فیلتر مقالات
     const filterButtons = document.querySelectorAll('.btn-filter');
     const articleCards = document.querySelectorAll('.article-card');
 
-    if(filterButtons.length > 0 && articleCards.length > 0) {
+    if (filterButtons.length > 0 && articleCards.length > 0) {
       filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-          // تغییر دکمه فعال
+          // تغییر حالت دکمه فعال
           filterButtons.forEach(btn => btn.classList.remove('active'));
           button.classList.add('active');
 
@@ -163,6 +249,9 @@
           articleCards.forEach(card => {
             if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
               card.style.display = 'flex';
+              // اعمال انیمیشن ظاهر شدن
+              card.style.animation = 'none';
+              card.offsetHeight; /* رفع باگ ری‌استارت انیمیشن */
               card.style.animation = 'fadeIn 0.5s ease forwards';
             } else {
               card.style.display = 'none';
