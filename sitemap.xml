@@ -7,18 +7,46 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- مقاله روانشناسی تصمیم تحصیلی -->
+  
+  <!-- مقاله ستون (Pillar) -->
   <url>
     <loc>https://ehssnrouhani.github.io/mester-guide/psychology-of-major-choice/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- مقالات خوشه‌ای (Cluster) -->
+  <url>
+    <loc>https://ehssnrouhani.github.io/mester-guide/identity-aptitude/what-is-talent/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ehssnrouhani.github.io/mester-guide/new-majors-jobs/ai-and-future-jobs/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ehssnrouhani.github.io/mester-guide/social-realities/job-market-reality/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ehssnrouhani.github.io/mester-guide/cognitive-biases/confirmation-bias/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- صفحه درباره من -->
   <url>
     <loc>https://ehssnrouhani.github.io/mester-guide/about/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>
