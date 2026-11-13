@@ -57,41 +57,32 @@
   }
   </script>
 
-  <!-- 2. اسکیمای مقاله ستون (TechArticle) - حالت اقماری -->
+  <!-- 2. اسکیمای لیست مقالات (ItemList) برای صفحه اصلی -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "روانشناسی تصمیم تحصیلی: چرا مغز ما اشتباه می‌کند؟",
-    "author": { "@type": "Person", "name": "احسان روحانی راوری", "url": "https://ehssnrouhani.github.io/mester-guide/about/" },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ehssnrouhani.github.io/mester-guide/psychology-of-major-choice/" },
-    "hasPart": [
-      { 
-        "@type": "Article", 
-        "name": "استعداد یعنی نمره ۲۰؟ تفاوت استعدادشناسی با نمرات مدرسه", 
-        "url": "https://ehssnrouhani.github.io/mester-guide/identity-aptitude/what-is-talent/" 
-      },
-      { 
-        "@type": "Article", 
-        "name": "هوش مصنوعی و مشاغل آینده: کدام رشته‌ها حذف می‌شوند؟", 
-        "url": "https://ehssnrouhani.github.io/mester-guide/new-majors-jobs/ai-and-future-jobs/" 
-      },
-      { 
-        "@type": "Article", 
-        "name": "واقعیت بازار کار ایران: چرا مدرک دانشگاهی ضامن شغل نیست؟", 
-        "url": "https://ehssnrouhani.github.io/mester-guide/social-realities/job-market-reality/" 
-      },
-      { 
-        "@type": "Article", 
-        "name": "سوگیری تأیید در انتخاب رشته", 
-        "url": "https://ehssnrouhani.github.io/mester-guide/cognitive-biases/confirmation-bias/" 
-      }
+    "@type": "ItemList",
+    "name": "مقالات تخصصی مستر گاید",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "روانشناسی تصمیم تحصیلی (راهنمای جامع)", "url": "https://ehssnrouhani.github.io/mester-guide/psychology-of-major-choice/" },
+      { "@type": "ListItem", "position": 2, "name": "استعداد یعنی نمره ۲۰؟", "url": "https://ehssnrouhani.github.io/mester-guide/identity-aptitude/what-is-talent/" },
+      { "@type": "ListItem", "position": 3, "name": "بحران هویت در انتخاب رشته", "url": "https://ehssnrouhani.github.io/mester-guide/identity-aptitude/identity-crisis/" },
+      { "@type": "ListItem", "position": 4, "name": "هوش‌های چندگانه گاردنر", "url": "https://ehssnrouhani.github.io/mester-guide/identity-aptitude/multiple-intelligences/" },
+      { "@type": "ListItem", "position": 5, "name": "هوش مصنوعی و مشاغل آینده", "url": "https://ehssnrouhani.github.io/mester-guide/new-majors-jobs/ai-and-future-jobs/" },
+      { "@type": "ListItem", "position": 6, "name": "رشته‌های دانشگاهی جدید", "url": "https://ehssnrouhani.github.io/mester-guide/new-majors-jobs/new-university-majors/" },
+      { "@type": "ListItem", "position": 7, "name": "فریلنسری و مهارت‌های دیجیتال", "url": "https://ehssnrouhani.github.io/mester-guide/new-majors-jobs/freelancing-skills/" },
+      { "@type": "ListItem", "position": 8, "name": "واقعیت بازار کار ایران", "url": "https://ehssnrouhani.github.io/mester-guide/social-realities/job-market-reality/" },
+      { "@type": "ListItem", "position": 9, "name": "فشار خانواده در انتخاب رشته", "url": "https://ehssnrouhani.github.io/mester-guide/social-realities/family-pressure/" },
+      { "@type": "ListItem", "position": 10, "name": "تله رشته‌های پرطرفدار", "url": "https://ehssnrouhani.github.io/mester-guide/social-realities/popular-majors-trap/" },
+      { "@type": "ListItem", "position": 11, "name": "سوگیری تأیید در انتخاب رشته", "url": "https://ehssnrouhani.github.io/mester-guide/cognitive-biases/confirmation-bias/" },
+      { "@type": "ListItem", "position": 12, "name": "دام هزینه هدر رفته", "url": "https://ehssnrouhani.github.io/mester-guide/cognitive-biases/sunk-cost-fallacy/" },
+      { "@type": "ListItem", "position": 13, "name": "اثر هاله‌ای در انتخاب رشته", "url": "https://ehssnrouhani.github.io/mester-guide/cognitive-biases/halo-effect/" }
     ]
   }
   </script>
 
   <style>
-    /* استایل اختصاصی دکمه‌های فیلتر (در صورت عدم وجود در style.css) */
+    /* استایل اختصاصی دکمه‌های فیلتر */
     .filter-buttons {
       display: flex; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;
     }
@@ -165,46 +156,87 @@
   <!-- گرید کارت‌ها -->
   <div class="grid" id="articlesGrid">
     
-    <!-- ۱. مقاله ستون (Pillar) -->
+    <!-- ================= مقاله ستون (Pillar) ================= -->
     <a href="psychology-of-major-choice/" class="card article-card" data-category="cognitive">
       <div style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-brain"></i></div>
       <h3>روانشناسی تصمیم تحصیلی (راهنمای جامع)</h3>
       <p>بررسی ۵ سوگیری شناختی پنهان که هنگام انتخاب رشته، تصمیم ما را منحرف می‌کنند.</p>
     </a>
 
-    <!-- ۲. مقاله هویت و استعدادشناسی -->
+    <!-- ================= دسته ۱: هویت و استعدادشناسی ================= -->
     <a href="identity-aptitude/what-is-talent/" class="card article-card" data-category="identity">
       <div style="font-size: 1.5rem; color: #3b82f6; margin-bottom: 0.5rem;"><i class="fa-solid fa-fingerprint"></i></div>
       <h3>استعداد یعنی نمره ۲۰؟</h3>
       <p>تفاوت علم استعدادشناسی با نمرات مدرسه، و چطور استعداد پایدار خود را کشف کنیم.</p>
     </a>
-
-    <!-- ۳. مقاله مشاغل جدید -->
-    <a href="new-majors-jobs/ai-and-future-jobs/" class="card article-card" data-category="new-jobs">
-      <div style="font-size: 1.5rem; color: #10b981; margin-bottom: 0.5rem;"><i class="fa-solid fa-robot"></i></div>
-      <h3>هوش مصنوعی و مشاغل آینده</h3>
-      <p>کدام رشته‌ها با آمدن AI حذف می‌شوند و کدام رشته‌های جدید تازه متولد می‌شوند؟</p>
-    </a>
-
-    <!-- ۴. مقاله واقعیت‌های اجتماعی -->
-    <a href="social-realities/job-market-reality/" class="card article-card" data-category="social">
-      <div style="font-size: 1.5rem; color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-chart-line"></i></div>
-      <h3>واقعیت بازار کار ایران</h3>
-      <p>چرا مدرک دانشگاهی دیگر ضامن شغل نیست؟ واقعیت‌های اجتماعی که کسی در مدرسه نمی‌گوید.</p>
-    </a>
-
-    <!-- ۵. مقاله هویت (بحران هویت) -->
+    
     <a href="identity-aptitude/identity-crisis/" class="card article-card" data-category="identity">
       <div style="font-size: 1.5rem; color: #3b82f6; margin-bottom: 0.5rem;"><i class="fa-solid fa-user-astronaut"></i></div>
       <h3>بحران هویت در انتخاب رشته</h3>
       <p>وقتی نمی‌دانی «من کی هستم»، چطور می‌توانی رشته‌ای را انتخاب کنی که به تو می‌خورد؟</p>
     </a>
 
-    <!-- ۶. مقاله سوگیری (سوگیری تأیید) -->
+    <a href="identity-aptitude/multiple-intelligences/" class="card article-card" data-category="identity">
+      <div style="font-size: 1.5rem; color: #3b82f6; margin-bottom: 0.5rem;"><i class="fa-solid fa-network-wired"></i></div>
+      <h3>هوش‌های چندگانه گاردنر</h3>
+      <p>چرا IQ تنها معیار نیست و چطور هوش غالب خود را برای انتخاب رشته پیدا کنیم.</p>
+    </a>
+
+    <!-- ================= دسته ۲: رشته‌ها و مشاغل جدید ================= -->
+    <a href="new-majors-jobs/ai-and-future-jobs/" class="card article-card" data-category="new-jobs">
+      <div style="font-size: 1.5rem; color: #10b981; margin-bottom: 0.5rem;"><i class="fa-solid fa-robot"></i></div>
+      <h3>هوش مصنوعی و مشاغل آینده</h3>
+      <p>کدام رشته‌ها با آمدن AI حذف می‌شوند و کدام رشته‌های جدید تازه متولد می‌شوند؟</p>
+    </a>
+
+    <a href="new-majors-jobs/new-university-majors/" class="card article-card" data-category="new-jobs">
+      <div style="font-size: 1.5rem; color: #10b981; margin-bottom: 0.5rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+      <h3>رشته‌های دانشگاهی جدید</h3>
+      <p>با رشته‌های نوظهور مانند علم داده و طراحی تجربه کاربری و بازار کار آن‌ها آشنا شوید.</p>
+    </a>
+
+    <a href="new-majors-jobs/freelancing-skills/" class="card article-card" data-category="new-jobs">
+      <div style="font-size: 1.5rem; color: #10b981; margin-bottom: 0.5rem;"><i class="fa-solid fa-laptop-code"></i></div>
+      <h3>فریلنسری و مهارت‌های دیجیتال</h3>
+      <p>آیا بدون مدرک دانشگاهی می‌توان شغل خوبی داشت؟ بررسی اهمیت مهارت‌های دیجیتال.</p>
+    </a>
+
+    <!-- ================= دسته ۳: واقعیت‌های اجتماعی ================= -->
+    <a href="social-realities/job-market-reality/" class="card article-card" data-category="social">
+      <div style="font-size: 1.5rem; color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-chart-line"></i></div>
+      <h3>واقعیت بازار کار ایران</h3>
+      <p>چرا مدرک دانشگاهی دیگر ضامن شغل نیست؟ واقعیت‌های اجتماعی که کسی در مدرسه نمی‌گوید.</p>
+    </a>
+
+    <a href="social-realities/family-pressure/" class="card article-card" data-category="social">
+      <div style="font-size: 1.5rem; color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-people-roof"></i></div>
+      <h3>فشار خانواده در انتخاب رشته</h3>
+      <p>چرا والدین اصرار دارند ما پزشک یا مهندس شویم؟ راه‌های مدیریت فشار خانواده.</p>
+    </a>
+
+    <a href="social-realities/popular-majors-trap/" class="card article-card" data-category="social">
+      <div style="font-size: 1.5rem; color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-triangle-exclamation"></i></div>
+      <h3>تله رشته‌های پرطرفدار</h3>
+      <p>چرا رشته‌هایی مثل حقوق و روانشناسی در مقطع لیسانس اشباع شده‌اند؟</p>
+    </a>
+
+    <!-- ================= دسته ۴: سوگیری‌های شناختی ================= -->
     <a href="cognitive-biases/confirmation-bias/" class="card article-card" data-category="cognitive">
       <div style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-magnifying-glass"></i></div>
       <h3>سوگیری تأیید در انتخاب رشته</h3>
       <p>چرا فقط شواهد تأییدکننده تصمیم خود را می‌بینیم و چطور از این دام خارج شویم؟</p>
+    </a>
+
+    <a href="cognitive-biases/sunk-cost-fallacy/" class="card article-card" data-category="cognitive">
+      <div style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-hourglass-half"></i></div>
+      <h3>دام هزینه هدر رفته</h3>
+      <p>چرا در مسیر اشتباه می‌مانیم؟ بررسی سوگیری هزینه هدر رفته در انتخاب رشته.</p>
+    </a>
+
+    <a href="cognitive-biases/halo-effect/" class="card article-card" data-category="cognitive">
+      <div style="font-size: 1.5rem; color: var(--primary); margin-bottom: 0.5rem;"><i class="fa-solid fa-ring"></i></div>
+      <h3>اثر هاله‌ای در انتخاب رشته</h3>
+      <p>چرا جذب عنوان‌های فریبنده رشته‌ها می‌شویم و چطور واقعیت را ببینیم؟</p>
     </a>
 
   </div>
